@@ -6,12 +6,12 @@
         "cities": [
           {
             "name": "Sydney, Australia",
-            "imageUrl": "enter_your_image_for_sydney.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOP6iybP-the5asymDKzXiFnmW9J7Y_ld-Wokui0Gok0108UAKc_HV4it9JSZHqoJapfJ88kF5a-qPhdg47As3Te3zzdglVZe9dvyFb0N7A9kZS2C2_7EBsB-FS9ZEEDKOEQvU=w326-h312-n-k-no",
             "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
           },
           {
             "name": "Melbourne, Australia",
-            "imageUrl": "enter_your_image_for_melbourne.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOryBX0Hw4Kmnz72wtgVs4PxpwZCivKW1lOIQUQTwwT07bCyWINRGajLu0GLWTtWITUu4WhlYB1EchmJfG_AZqEHLl7C4OQD217IgzLgHozOizcT-5WZ5-m7mO6Z8JQRu2iA-o=w326-h312-n-k-no",
             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
           }
         ]
@@ -22,12 +22,12 @@
         "cities": [
           {
             "name": "Tokyo, Japan",
-            "imageUrl": "enter_your_image_for_tokyo.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmPIYIz-u025fEE1hDYWDfaMAw7w7ho811F2sCNTBvEUpCVdhW52OCpYu8EGFp37Sse8bGf85AP9zU3RiAmwYQ3ijyu4IKOex1lJC4PVaLcbs-5NIhEOiHMBsBfYmiSDTt_3lr-H0ntjkZtI=w326-h312-n-k-no",
             "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
           },
           {
             "name": "Kyoto, Japan",
-            "imageUrl": "enter_your_image_for_kyoto.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmW_Gf8vGjfJqNQQxoa8nw-bSIQJD9t1Nw8NNFJw3Kb_l8L7Hkufmh6VtkZv9tmE-5R35IUj7S4TMg4naIb5ex0XBqR_HdypXdI043QMllbb8Z8wyXVHkFRGqDELCOEbtSfMLhppw=s1360-w1360-h1020-rw",
             "description": "Known for its historic temples, gardens, and traditional tea houses."
           }
         ]
@@ -38,12 +38,12 @@
         "cities": [
           {
             "name": "Rio de Janeiro, Brazil",
-            "imageUrl": "enter_your_image_for_rio.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmr7XUNxRnacJkV62Lv4_7rnmbqGuYmx-0iEuu6SDXZDO1OzZ2iuZThsPInANcT_EBN-VUHxkc3Nhv3-YsOYAbIQRvPoUORxpcntw6tZenehPKHvS9_NHYPP0DbE0EVBXofkxt7=s1360-w1360-h1020-rw",
             "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
           },
           {
             "name": "São Paulo, Brazil",
-            "imageUrl": "enter_your_image_for_sao-paulo.jpg",
+            "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmDCCvIulvudNJYeOUVSyiitn2UXet_UONrq9CZuR-OQIEkj0FrS69eGEEF77ko2Itvewa2J2UOB2xW34xD9vSJSKNPpCYuMkY_Npn79WGfl8T4lHCBolkaHHr8BVIVWzehiAEU=s1360-w1360-h1020-rw",
             "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
           }
         ]

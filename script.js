@@ -19,8 +19,10 @@ async function getTravelData() {
         const data = await response.json();
 
         return data;
+
     } catch (error) {
         console.error(error);
+
         recommendationContainer.innerHTML =
             "<p>Unable to load travel recommendations.</p>";
     }
@@ -39,7 +41,10 @@ function displayRecommendations(recommendations) {
         card.className = "recommendation-card";
 
         card.innerHTML = `
-            <img src="${place.imageUrl}" alt="${place.name}">
+            <img 
+                src="${place.imageUrl}" 
+                alt="${place.name}"
+            >
 
             <div class="recommendation-content">
 
@@ -55,7 +60,7 @@ function displayRecommendations(recommendations) {
 }
 
 
-// Search function
+// Search recommendations
 async function searchRecommendations() {
 
     const keyword = searchInput.value.trim().toLowerCase();
@@ -72,29 +77,60 @@ async function searchRecommendations() {
 
     let recommendations = [];
 
-    // Beach search
-    if (keyword.includes("beach")) {
+
+    // =========================
+    // BEACH SEARCH
+    // =========================
+
+    if (
+        keyword.includes("beach") ||
+        keyword.includes("beaches")
+    ) {
 
         recommendations = data.beaches;
-
     }
 
-    // Temple search
-    else if (keyword.includes("temple")) {
+
+    // =========================
+    // TEMPLE SEARCH
+    // =========================
+
+    else if (
+        keyword.includes("temple") ||
+        keyword.includes("temples")
+    ) {
 
         recommendations = data.temples;
-
     }
 
-    // Country search
+
+    // =========================
+    // COUNTRY SEARCH
+    // =========================
+
     else if (
         keyword.includes("country") ||
         keyword.includes("countries")
     ) {
 
-        recommendations = data.countries;
+        // Countries contain cities,
+        // so we get the cities from every country.
 
+        data.countries.forEach((country) => {
+
+            country.cities.forEach((city) => {
+
+                recommendations.push(city);
+
+            });
+
+        });
     }
+
+
+    // =========================
+    // DISPLAY RESULTS
+    // =========================
 
     if (recommendations.length > 0) {
 
@@ -102,13 +138,17 @@ async function searchRecommendations() {
 
     } else {
 
-        recommendationContainer.innerHTML =
-            "<p>No recommendations found. Try beach, temple, or country.</p>";
+        recommendationContainer.innerHTML = `
+            <p>
+                No recommendations found.
+                Try beach, temple, or country.
+            </p>
+        `;
     }
 }
 
 
-// Clear results
+// Clear recommendations
 function clearRecommendations() {
 
     searchInput.value = "";
@@ -117,17 +157,30 @@ function clearRecommendations() {
 }
 
 
-// Event listeners
-searchBtn.addEventListener("click", searchRecommendations);
+// Search button
+searchBtn.addEventListener(
+    "click",
+    searchRecommendations
+);
 
-clearBtn.addEventListener("click", clearRecommendations);
+
+// Clear button
+clearBtn.addEventListener(
+    "click",
+    clearRecommendations
+);
 
 
-// Allow Enter key for search
-searchInput.addEventListener("keydown", function (event) {
+// Press Enter to search
+searchInput.addEventListener(
+    "keydown",
+    function (event) {
 
-    if (event.key === "Enter") {
-        searchRecommendations();
+        if (event.key === "Enter") {
+
+            searchRecommendations();
+
+        }
+
     }
-
-});
+);

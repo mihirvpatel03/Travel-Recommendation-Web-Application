@@ -243,3 +243,98 @@ nav {
     }
 
 }
+
+/* Contact Page */
+
+.contact-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0077b6;
+}
+
+.contact-form button {
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #0077b6;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005f8f;
+}
+
+
+/* Mobile Contact Page */
+
+@media (max-width: 700px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        margin: 20px;
+        padding: 25px;
+    }
+
+}
